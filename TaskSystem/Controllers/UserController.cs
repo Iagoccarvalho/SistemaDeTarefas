@@ -31,7 +31,7 @@ namespace TaskSystem.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<User>> Regsiter([FromBody] User user)
+        public async Task<ActionResult<User>> Register([FromBody] User user)
         {
           User _user = await _userRepository.add(user);
             return Ok(_user);
